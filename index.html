@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="movie-picker">
+        <label for="movie-select">Pick a movie:</label>
+        <select id="movie-select">
+          <option value="movie1">movie 1</option>
+          <option value="movie2">movie 2</option>
+          <option value="movie3">movie 3</option>
+        </select>
+      </div>
+      <div class="showcase">
+        <div class="showcase_item">
+          <div class="seat showcase_seat"></div>
+          <p>N/A</p>
+        </div>
+        <div class="showcase_item">
+          <div class="seat showcase_seat seat--selected"></div>
+          <p>Selected</p>
+        </div>
+        <div class="showcase_item">
+          <div class="seat showcase_seat seat--occupied"></div>
+          <p>Occupied</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage_screen"></div>
+        <div class="stage_seats">
+          <div class="stage_seats-block block--left">
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat seat--occupied"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+          </div>
+          <div class="stage_seats-block block--middle">
+            <div class="stage_seat"></div>
+            <div class="seat stage_seat seat--occupied"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat seat--occupied"></div>
+            <div class="seat stage_seat seat--occupied"></div>
+            <div class="seat stage_seat seat--occupied"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+          </div>
+          <div class="stage_seats-block block--right">
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+            <div class="seat stage_seat"></div>
+          </div>
+        </div>
+        <p class="result">
+          You have selected <span id="result_counter">0</span> seats for a price
+          of $<span id="result_price">0</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
